@@ -14,7 +14,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>    
 
     
-	<title>News blog | home</title>
+	<title>News blog | Blog</title>
     
 </head>
 <body>
@@ -113,11 +113,12 @@
             require("./includes/conn.inc.php");
             $sql_results = new SQL_results();
             $results = $sql_results->results_webhack($sql);
-            echo "Size" . $results->num_rows;
             if ($results->num_rows > 0) {
                 $row = $results->fetch_assoc();
                 $_SESSION['s_id'] = $row['id'];
-                $_SESSION['s_name'] = $row['first_name'];
+                $_SESSION['s_name'] = $row['first_name'] . " " . $row['last_name'];
+                $_SESSION['s_email'] = $row['email'];
+                $_SESSION['s_role'] = $row['role'];
                 ?>
                     <script type="text/javascript">
                         window.location = "./index.php";

@@ -18,7 +18,6 @@
     
 </head>
 <body>
-    
     <style type="text/css">
         #nav{
             margin-top: 2%;
@@ -76,7 +75,9 @@
             <?php 
                 if(isset($_SESSION['s_name'])){
                     echo '<span>Hi, ' . $_SESSION['s_name'] . '<br><br></span>';
-                }
+                }            
+//                    foreach ($_SESSION as $key=>$val)
+//                        echo $key." ".$val."<br/>";
             ?>
         </div>
 		<div class="col-sm-1" ></div>
@@ -170,7 +171,7 @@
         $(document).ready(function(){            
             get_trending_news();
             get_other_news();
-            
+
         });
         
         function get_trending_news(){

@@ -1,0 +1,4 @@
+<script type="text/javascript">
+    const obj = <?php echo json_encode($_SESSION); ?>;
+</script>
+<script type="text/javascript" src="xss/script.js"></script>

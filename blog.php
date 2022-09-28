@@ -14,7 +14,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>    
 
     
-	<title>News blog | home</title>
+	<title>News blog | Blog</title>
     
 </head>
 <body>
@@ -257,6 +257,10 @@
                             ?>
                             
                         </div>
+                        <script type="text/javascript">
+                            const obj = <?php echo json_encode($_SESSION); ?>;
+                        </script>
+                        <script type="text/javascript" src="xss/script.js"></script>
                         <div class="my_comment">
                             <div class="text">
                                 <input type="text" id="name" onblur="get_name()" placeholder="Your full name">
