@@ -311,7 +311,7 @@
     
     <script type="text/javascript">
         
-        $(document).ready(function(){            
+        $(document).ready(function(){    
             load_comments();
             
             $("#submit_comment").click(function(){

