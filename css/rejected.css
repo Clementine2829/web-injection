@@ -1,0 +1,76 @@
+#nav .subNavitems a:nth-child(2){
+    border-bottom: 6px solid rgb(175, 175, 175);;
+}
+#nav{
+    margin-bottom: 2%;
+}
+#scan_content{
+    width: 100%;
+    float: left;
+}
+#scan_content .scan_bar{
+    width: 100%;
+    float: left;
+    padding: 2% 10%;
+}
+#input_url{
+    width: 70%;
+    border: 1px solid lightblue;
+    padding: 2% 4%;
+    margin-top: 2%;
+}
+#input_url:active, 
+#input_url:focus{
+    outline: none;
+}
+#scan_submit{
+    width: auto;
+    border: 1px solid lightblue;
+    padding: 2% 6%;
+    margin-top: 2%;
+
+}
+#scan_submit{
+    background-color: lightblue;
+    color: rgb(55, 55, 55);
+}
+#scan_submit:hover{
+    background-color: white
+}
+
+#payload_content{
+    width: 100%;
+    float: left;
+    margin-top: 5%;
+}
+#payload{
+    width: 76%;
+    margin-left: 10%;
+    height: 200px;
+    border: 1px solid lightblue;
+    padding: 2% 4%;
+}        
+#payload:active, 
+#payload:focus{
+    outline: none;
+}
+#updates{
+    float: right;
+    margin: 2% 14%;
+    background-color: lightblue;
+    color: rgb(55, 55, 55);
+    width: auto;
+    border: 1px solid lightblue;
+    padding: 1% 6%;
+}
+#updates:hover{
+    background-color: white
+}
+
+#reports{
+    margin: 1%;
+    margin-left: 13%;
+}
+#reports a{
+    text-decoration: none;
+}

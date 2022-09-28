@@ -1,0 +1,22 @@
+body, 
+html{
+    max-width: 100%;
+}
+* {box-sizing:border-box;}
+#nav{
+    text-align: center;
+    margin: 1% auto 4% auto;
+}
+#nav .subNavitems{
+    border: 1px solid gray;
+    background-color: rgb(200, 200, 200);
+    text-align: center;
+    margin: 2%;
+    padding: 2%;
+}
+#nav .subNavitems a{
+    text-decoration: none;
+    margin: auto 5%;
+    color: blue;
+    padding-left: 4px;
+}
