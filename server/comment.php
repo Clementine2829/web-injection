@@ -1,7 +1,7 @@
 <?php session_start(); 
     if($_SERVER["REQUEST_METHOD"] == "POST"){
-        //$user_id = (isset($_SESSION['s_id'])) ? $_SESSION['s_id'] : "";
-        $user_id = "sBIGxZHYTAchyEffGgiHUOD6zMLP09BUy0A";
+        $user_id = (isset($_SESSION['s_id'])) ? $_SESSION['s_id'] : "";
+//        $user_id = "sBIGxZHYTAchyEffGgiHUOD6zMLP09BUy0A";
         $name = (isset($_REQUEST['name'])) ? $_REQUEST['name'] : "";
         $message = (isset($_REQUEST['message'])) ? $_REQUEST['message'] : "";
         $id = (isset($_REQUEST['id'])) ? $_REQUEST['id'] : "";
@@ -20,7 +20,6 @@
         
         require("../includes/conn.inc.php");
         $date = date("d-M-Y h:i");
-        $user_id = "sBIGxZHYTAchyEffGgiHUOD6zMLP09BUy0A";
         $sql = "INSERT INTO comments VALUES (\"$commend_id\", \"$id\", \"$message\", \"$user_id\", \"$name\", \"$date\")";
         $db_login = new DB_login_updates();
         $connection = $db_login->connect_db("webhack");

@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,7 +72,12 @@
                     </div>
                     
                 </div>
-            </nav> 
+            </nav>
+            <?php 
+                if(isset($_SESSION['s_name'])){
+                    echo '<span>Hi, ' . $_SESSION['s_name'] . '<br><br></span>';
+                }
+            ?>
         </div>
 		<div class="col-sm-1" ></div>
     </div>
@@ -159,9 +165,7 @@
         </div>
         <div class="col-sm-1"></div>
     </div>
-    
-    
-    <script type="text/javascript" src="./js/common.js"></script>
+        
     <script type="text/javascript">
         $(document).ready(function(){            
             get_trending_news();
